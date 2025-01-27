@@ -55,7 +55,8 @@ const { setFoodsList, changeActiveIndex, addCart, increCount, decreCount, clearC
 const fetchFoodsList = () => {
   return async (dispatch) => {
     try {
-      const res = await axios.get('http://localhost:3004/takeaway')
+      // const res = await axios.get('http://localhost:3004/takeaway')
+      const res = await axios.get('/data.json')
       // const encodedURL = encodeURIComponent('http://localhost:3004/takeaway')
       // const res = await axios.get(encodedURL)
       // console.log(res.data)
